@@ -12,6 +12,12 @@ The software is part of an embedded system, designed to integrate with synchrono
 
 It enables measurements of LFD using space-resolved reflectance of LFDs before and after test line development to quantify the concentration of the LFD specific biomarker.
 
+### Python Logging Scripts
+3 scripts also exist used to 
++ log quickly in short burst
++ log less quickly over long intervals over hours or days
++ graph live output from MUC
+
 
 ## Software Implementation
 
@@ -25,14 +31,22 @@ Specifically developed project files:
 + low_power.c (Functions for putting the MCU into a low power mode or deep sleep, allowing for a significant reduction in power consumption.)
 
 ## Operation 
-The overall software and device operation is described in ![](.readmePhotos/Operation.pdf)
+The overall software and device operation is described in ![](.readmePhotos/Operation.png)
 
 
-### Python Logging Scripts
-3 scripts exist used to log quickly in short burst, or less quickly over long intervals over hours or days. Live graphing of output could also be displayed.
 
 
-## Software and Driver Overview
+
+
+
+
+
+
+
+
+
+
+## Required Software and Driver Overview
 The following contains links to necessary software and drivers as well as useful information when programming. 
 The ST website has an extensive database of technical information and software, but navigating the extensive database can be overwhelming.
 Here are the drivers and software of interest, all apart from the ARM IDE which are from the ST website.
