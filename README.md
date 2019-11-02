@@ -31,13 +31,12 @@ Specifically developed project files:
 + low_power.c (Functions for putting the MCU into a low power mode or deep sleep, allowing for a significant reduction in power consumption.)
 
 ## Operation 
-The overall software and device operation is described in ![Device Operation Overview Image](./.readmePhotos/Operation.png)
-
-
-
-
-
-
+The overall software and device operation is described the following images, describing:
+1. Device Operation Overview Image ![Device Operation Overview Image](./.readmePhotos/Operation.png "Device Operation Overview")
+2. System Concept ![System Concept Image](./.readmePhotos/System Concept.png "System Concept")
+3.
+4.
+5.
 
 
 
