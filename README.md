@@ -49,14 +49,15 @@ The overall software and device operation is described the following images or l
 The following contains links to necessary software and drivers as well as useful information when programming. 
 The ST website has an extensive database of technical information and software, but navigating the extensive database can be overwhelming.
 Here are the drivers and software of interest, all apart from the ARM IDE which are from the ST website.
-The tool flow is described on https://www.st.com/en/development-tools/stm32-software-development-tools.html?querycriteria=productId=SC2106
+The tool flow is described on [Tool FLow Description](https://www.st.com/en/development-tools/stm32-software-development-tools.html?querycriteria=productId=SC2106)
 
 ### ARM Microcontroller Developer Kit, uVision IDE. 
 This is the IDE used through development. Free version was used available from: http://www2.keil.com/mdk5/.
+The STM32F446RE ARM Cortex-M4 MCU was used.
 
 ### The STM32CubeMX
 STM32CubeMX software was used for setup and configuration of the board in unison with the Keil uVision IDE:
-https://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-configurators-and-code-generators/stm32cubemx.html
+[STM32 Dev Tools](https://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-configurators-and-code-generators/stm32cubemx.html)
 
 ### PuTTY 
 Putty was used for serial communication with the board when not graphing or logging.
@@ -68,26 +69,20 @@ For the communication used in this project, the serial was setup with 8 data bit
 
 #### ST Link Utility, Memory access and Firmware Upgrade, including Virtual COM port drivers for the MCU:
 MCU is already upgraded in firmware, so barebones driver below should be sufficient.
-https://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-programmers/stsw-link004.html
+[ST Link Utility](https://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-programmers/stsw-link004.html)
 
 #### Bare bones Virtual COM port driver required to communicate over serial with the MCU:
-https://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-utilities/stsw-link009.html
-The MCU has a ST-LINK/V2-1
+[STM Dev Tools](https://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-utilities/stsw-link009.html)
+The MCU used, the STM32F446RE, has the ST-LINK/V2-1.
 
 #### Firmware Examples and Info for various nucleo boards:
-https://www.st.com/content/st_com/en/products/embedded-software/mcu-mpu-embedded-software/stm32-embedded-software/stm32cube-mcu-mpu-packages/stm32cubef4.html
+[STM Examples](https://www.st.com/content/st_com/en/products/embedded-software/mcu-mpu-embedded-software/stm32-embedded-software/stm32cube-mcu-mpu-packages/stm32cubef4.html)
 
 #### Useful links for finding information on the board and related content:
-+ MCU Overview: https://www.st.com/en/microcontrollers-microprocessors/stm32f4-series.html?querycriteria=productId=SS1577
++ MCU Overview: [STM Overview](https://www.st.com/en/microcontrollers-microprocessors/stm32f4-series.html?querycriteria=productId=SS1577)
 
-+ Technical Information and Software: https://www.st.com/content/st_com/en/support/support-home.html?querycriteria=productId=SS1577resourceCategory=technical_literatureresourceType=application_note  (The top search field is your friend)
++ Technical Information and Software: [STM Info Search](https://www.st.com/content/st_com/en/support/support-home.html?querycriteria=productId=SS1577resourceCategory=technical_literatureresourceType=application_note)  (The top search field is your friend)
 	
-+ Some useful tutorials, with a pinch of salt: https://visualgdb.com/w/tutorials/category/tutorials/embedded/stm32_periph/
-	
-+ Some "bare-metal" tutorials which results in less software bloating, less preprocessing utilisation and better general control: https://vivonomicon.com/category/stm32_baremetal_examples/  (This should generallt be preferred in potentially timing critical execution)
-	
-+ MCU Pin Out overview can be found here: https://os.mbed.com/platforms/ST-Nucleo-F446RE/#nucleo-pinout
-	
-+ Several datasheets are also attached in the folder MCU Datasheets. Pay special attention to the main reference manual and datasheet, "STM32f446RE Advanced Reference Manual, RM0390" and "STM32f446RE Datasheet", which are necessary in programming or using low-level peripherals. Other datasheets can be useful for reference.# LFD_Reader
+	- Pay special attention to the main reference manual and datasheet, "STM32f446RE Advanced Reference Manual, RM0390" and "STM32f446RE Datasheet", which are necessary in programming or using low-level peripherals. Other datasheets can be useful for reference.# LFD_Reader
 
 
