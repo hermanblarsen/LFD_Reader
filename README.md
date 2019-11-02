@@ -12,13 +12,6 @@ The software is part of an embedded system, designed to integrate with synchrono
 
 It enables measurements of LFD using space-resolved reflectance of LFDs before and after test line development to quantify the concentration of the LFD specific biomarker.
 
-### Python Logging Scripts
-3 scripts also exist used to 
-+ log quickly in short burst
-+ log less quickly over long intervals over hours or days
-+ graph live output from MUC
-
-
 ## Software Implementation
 
 More information for each file can  be found in each .c/.h file.
@@ -30,6 +23,12 @@ Specifically developed project files:
 + utilities.c (Functions utilised in the main related to arithmetic and DSP operations such as peak finding, as well as printing of the CCD output.)
 + low_power.c (Functions for putting the MCU into a low power mode or deep sleep, allowing for a significant reduction in power consumption.)
 
+### Python Logging Scripts
+3 scripts also exist used to 
++ log quickly in short burst
++ log less quickly over long intervals over hours or days
++ graph live output from MUC
+
 ## Operation 
 The overall software and device operation is described the following images or links, describing:
 1. Device Operation Overview Image ![Device Operation Overview Image](./.readmePhotos/Operation.png "Device Operation Overview")
@@ -37,6 +36,7 @@ The overall software and device operation is described the following images or l
 3. [Operation of Calibration and Test Measurements](./.readmePhotos/OperationMeasurements.pdf)
 4. [Operation of CCD Calibration](./.readmePhotos/OperationCCDcalibration.pdf)
 5. [Operation of CCD Read and Clear](./.readmePhotos/OperationCCDClearRead.pdf)
+
 
 
 
@@ -63,7 +63,6 @@ STM32CubeMX software was used for setup and configuration of the board in unison
 Putty was used for serial communication with the board when not graphing or logging.
 The com port name can be found in device manager, and the conenction baudrate(speed) is 115200 (further details can be found inside the actual code in usart.c|h).
 For the communication used in this project, the serial was setup with 8 data bits, 1 stop bit, no parity and flow control set to XON/XOFF (putty serial settings).
-
 
 ### Drivers and useful downloads:
 
